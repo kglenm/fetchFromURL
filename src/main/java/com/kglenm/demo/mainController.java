@@ -1,5 +1,6 @@
 package com.kglenm.demo;
 
+import org.springframework.boot.json.GsonJsonParser;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -41,7 +42,7 @@ public class mainController {
         for (int y = 1; y < tableData.length; y++) {
             if (count == 0) {
                 tempTech = tableData[y].replaceAll("</td>", "");
-                System.out.println(y+" "+tableData[y].replaceAll("</td>", ""));
+                //System.out.println(y+" "+tableData[y].replaceAll("</td>", ""));
                 count++;
             } else if (count == 1) {
                 //System.out.println(y+" "+tableData[y].replaceAll("</td>", ""));
@@ -74,6 +75,8 @@ public class mainController {
             }
 
         }
+
+        System.out.println(entire_map);
         return entire_map;
     }
 
