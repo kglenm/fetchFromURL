@@ -11,4 +11,4 @@ How to run: (note: this is a spring framework project)
 1) Open project with eclipse, intellij or any other supporting IDE
 2) Run the project
 3) Open browser, navigate to http://localhost:*running port*
-4) See results in JSON
+4) See results in JSON (also see uploaded screenshot)
